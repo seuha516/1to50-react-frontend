@@ -1,11 +1,11 @@
-import React from "react";
-import { shallowEqual, useSelector } from "react-redux";
+import React from 'react';
+import { shallowEqual, useSelector } from 'react-redux';
 //components
-import Cell from "./Cell";
-import Text from "./Text";
+import Cell from './Cell';
+import Text from './Text';
 //style
-import classNames from "classnames/bind";
-import styles from "../design/Board.module.scss";
+import classNames from 'classnames/bind';
+import styles from '../design/Board.module.scss';
 const cx = classNames.bind(styles);
 
 const Board = () => {
@@ -15,15 +15,15 @@ const Board = () => {
       gameState: data.gameState,
       boardState: board.boardState,
     }),
-    shallowEqual
+    shallowEqual,
   );
   //return
   return (
-    <div className={cx("board")}>
+    <div className={cx('board')}>
       {gameState === 0 ? (
         <ul>
-          {boardState.map((line) => (
-            <ul className={cx("line")}>
+          {boardState.map((line, idx) => (
+            <ul key={idx} className={cx('line')}>
               {line.map((cell) => (
                 <Cell key={cell.id} value={cell.value} />
               ))}
