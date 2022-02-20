@@ -1,0 +1,49 @@
+.area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  .gameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+    .info {
+      display: flex;
+      align-items: center;
+      vertical-align: center;
+      margin: 15px 0px;
+    }
+  }
+}
+.ranking {
+  text-decoration: none;
+  font-size: 22.5px;
+  font-family: "Dela Gothic One", cursive;
+  color: rgba(212, 255, 255, 0.774);
+}
+@media all and (max-width: 425px) {
+  .area .gameArea .info {
+    margin: 3.53vw 0vw;
+  }
+  .ranking {
+    font-size: 5.29vw;
+  }
+}
+@media all and (max-height: 630px) and (min-width: 376px) {
+  .area {
+    height: 630px;
+  }
+}
+@media all and (max-height: 556.5px) and (max-width: 376px) and (min-width: 321px) {
+  .area {
+    height: 556.5px;
+  }
+}
+@media all and (max-height: 472.5px) and (max-width: 321px) {
+  .area {
+    height: 472.5px;
+  }
+}

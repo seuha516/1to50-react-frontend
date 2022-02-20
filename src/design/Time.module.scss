@@ -1,0 +1,21 @@
+.time {
+  width: 140px;
+  color: rgb(255, 184, 184);
+  font-size: 45px;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+  text-shadow: 0 2px rgb(128, 105, 255);
+  display: table-cell;
+  vertical-align: middle;
+  &.restart {
+    width: auto;
+  }
+}
+@media all and (max-width: 425px) {
+  .time {
+    width: 32.94vw;
+    font-size: 10.59vw;
+    letter-spacing: 0.23vw;
+    text-shadow: 0 0.47vw rgb(128, 105, 255);
+  }
+}

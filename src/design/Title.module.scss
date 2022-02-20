@@ -1,0 +1,19 @@
+.title {
+  width: 350px;
+  height: 70px;
+  color: white;
+  font-size: 60px;
+  font-family: "Dela Gothic One", cursive;
+  letter-spacing: 3px;
+  text-shadow: 0px 0 black, 3px 0 rgb(103, 138, 255), 3px 0 rgb(103, 232, 255),
+    0 0px black;
+  text-align: center;
+}
+@media all and (max-width: 425px) {
+  .title {
+    width: 82.35vw;
+    height: 16.47vw;
+    font-size: 14.12vw;
+    letter-spacing: 0.705vw;
+  }
+}

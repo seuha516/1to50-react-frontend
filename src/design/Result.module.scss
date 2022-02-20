@@ -1,0 +1,17 @@
+.result {
+  color: rgb(230, 255, 184);
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+  text-shadow: 0 2px rgba(128, 105, 255, 0.37);
+  margin-right: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  transition: all 1s cubic-bezier(0.02, 0.9, 0.25, 0.96);
+}
+@media all and (max-width: 425px) {
+  .result {
+    font-size: 9.41vw;
+    text-shadow: 0 0.47vw rgba(128, 105, 255, 0.37);
+    margin-right: 2.35vw;
+  }
+}

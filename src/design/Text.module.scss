@@ -1,0 +1,68 @@
+.startButton {
+  color: rgba(0, 255, 149, 0.692);
+  font-family: "Londrina Solid", cursive;
+  font-size: 70px;
+  letter-spacing: 7px;
+  margin-top: -10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    color: rgba(0, 255, 149, 0.877);
+    font-size: 75px;
+  }
+  &.re {
+    font-size: 60px;
+    letter-spacing: 0px;
+    &:hover {
+      font-size: 64px;
+    }
+  }
+}
+.countdown {
+  color: rgba(253, 253, 253, 0.747);
+  font-size: 150px;
+  font-family: "Righteous", cursive;
+  margin-top: -10px;
+}
+.loading {
+  color: rgba(67, 242, 255, 0.692);
+  font-size: 60px;
+  font-family: "Londrina Solid", cursive;
+  margin-top: -15px;
+  animation: wait 2s infinite ease-in-out;
+}
+@keyframes wait {
+  0% {
+    color: rgba(67, 242, 255, 0.692);
+  }
+  50% {
+    color: rgba(94, 164, 255, 0.692);
+  }
+  100% {
+    color: rgba(67, 242, 255, 0.692);
+  }
+}
+@media all and (max-width: 425px) {
+  .startButton {
+    font-size: 16.47vw;
+    letter-spacing: 1.65vw;
+    margin-top: -2.35vw;
+    &:hover {
+      font-size: 17.65vw;
+    }
+    &.re {
+      font-size: 14.12vw;
+      &:hover {
+        font-size: 15.06vw;
+      }
+    }
+  }
+  .countdown {
+    font-size: 35.29vw;
+    margin-top: -2.35vw;
+  }
+  .loading {
+    font-size: 14.12vw;
+    margin-top: -3.53vw;
+  }
+}

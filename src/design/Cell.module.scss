@@ -1,0 +1,51 @@
+.cell {
+  width: 75px;
+  height: 75px;
+  margin: 2px;
+  border-radius: 10px;
+  border: 3px solid rgba(116, 255, 243, 0.692);
+  padding-bottom: 5px;
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 50px;
+  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  &:hover {
+    @media (hover: hover) and (pointer: fine) {
+      box-shadow: inset 0 0 8px rgba(136, 237, 255, 0.89),
+        0 0 8px rgba(113, 238, 247, 0.829);
+      text-shadow: 1px 1px 2px #78ffe9;
+    }
+  }
+  &:active {
+    box-shadow: inset 0 0 8px rgba(136, 237, 255, 0.89),
+      0 0 8px rgba(113, 238, 247, 0.829);
+    text-shadow: 1px 1px 2px #78ffe9;
+  }
+}
+@media all and (max-width: 425px) {
+  .cell {
+    width: 17.65vw;
+    height: 17.65vw;
+    margin: 0.47vw;
+    border-radius: 2.35vw;
+    border-width: 0.705vw;
+    padding-bottom: 1.18vw;
+    font-size: 11.76vw;
+    &:hover {
+      @media (hover: hover) and (pointer: fine) {
+        box-shadow: inset 0 0 1.88vw rgba(136, 237, 255, 0.89),
+          0 0 1.88vw rgba(113, 238, 247, 0.829);
+        text-shadow: 0.23vw 0.23vw 0.47vw #78ffe9;
+      }
+    }
+    &:active {
+      box-shadow: inset 0 0 1.88vw rgba(136, 237, 255, 0.89),
+        0 0 1.88vw rgba(113, 238, 247, 0.829);
+      text-shadow: 0.23vw 0.23vw 0.47vw #78ffe9;
+    }
+  }
+}

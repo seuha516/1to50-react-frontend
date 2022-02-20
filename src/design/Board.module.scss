@@ -1,0 +1,23 @@
+.board {
+  width: 400px;
+  height: 400px;
+  border: 3px solid;
+  border-radius: 15px;
+  border-color: rgba(0, 0, 0, 0.548) rgba(111, 98, 185, 0.548)
+    rgba(111, 98, 185, 0.548) rgba(0, 0, 0, 0.548);
+  background-color: rgba(0, 0, 0, 0.336);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .line {
+    display: flex;
+  }
+}
+@media all and (max-width: 425px) {
+  .board {
+    width: 94.12vw;
+    height: 94.12vw;
+    border-width: 0.705vw;
+    border-radius: 3.53vw;
+  }
+}

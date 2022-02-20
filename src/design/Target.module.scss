@@ -1,0 +1,54 @@
+.box {
+  width: 160px;
+  height: 100px;
+  border: 5px outset rgba(207, 198, 255, 0.151);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.068);
+  display: table;
+  margin-right: 30px;
+  .text {
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 30px;
+    font-size: 35px;
+    font-family: "Fugaz One", cursive;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5), 1px 0 rgba(255, 255, 255, 0.5),
+      0 -1px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    margin-top: -20px;
+  }
+  .target {
+    color: rgb(190, 255, 252);
+    height: 50px;
+    font-size: 50px;
+    letter-spacing: 3px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Fugaz One", cursive;
+    text-shadow: 0 3px rgb(0, 134, 175);
+  }
+}
+@media all and (max-width: 425px) {
+  .box {
+    width: 37.65vw;
+    height: 23.53vw;
+    border-width: 1.18vw;
+    border-radius: 4.71vw;
+    margin-right: 7.06vw;
+    .text {
+      width: 23.53vw;
+      height: 7.06vw;
+      font-size: 8.26vw;
+      text-shadow: 0 0.23vw rgba(255, 255, 255, 0.5),
+        0.23vw 0 rgba(255, 255, 255, 0.5), 0 -0.23vw rgba(255, 255, 255, 0.5);
+      margin-top: -4.71vw;
+    }
+    .target {
+      height: 11.76vw;
+      font-size: 11.76vw;
+      letter-spacing: 0.71vw;
+      text-shadow: 0 0.71vw rgb(0, 134, 175);
+    }
+  }
+}
