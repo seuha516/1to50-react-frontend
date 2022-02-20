@@ -18,12 +18,10 @@ const Ranking = ({ history }) => {
     await axios
       .get(`${process.env.REACT_APP_API_URL}/api/ranking`)
       .then((res) => {
-        console.log(res.data);
         setList(res.data);
         setLoading(false);
       })
       .catch((err) => {
-        console.log('랭킹 로드 중 오류 발생', err);
         alert('서버에 연결할 수 없습니다.');
         history.push('/');
       });
