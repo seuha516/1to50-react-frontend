@@ -20,6 +20,6 @@
   * 랭킹 구현
 
 ## Other
-- [1to50_BackEnd](https://github.com/seuha516/1to50_BackEnd)
+- [1to50_BackEnd](https://github.com/seuha516/1to50-koa-backend)
 
 
